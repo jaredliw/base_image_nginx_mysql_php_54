@@ -1,5 +1,8 @@
 # jaredliw/base_image_nginx_mysql_php_54
 
+Docker: https://hub.docker.com/r/jaredliw/base_image_nginx_mysql_php_54 \
+GitHub: https://github.com/jaredliw/base_image_nginx_mysql_php_54
+
 ## Base Image LNMP
 
 - L: Linux alpine
