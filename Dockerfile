@@ -20,8 +20,7 @@ RUN mysql_install_db --user=mysql --datadir=/var/lib/mysql \
     && mysql -e "source /var/www/html/db.sql;" -uroot -proot
 
 # configure file
-RUN mv /tmp/flag.sh /flag.sh \
-    && mv /tmp/docker-php-entrypoint /usr/local/bin/docker-php-entrypoint \
+RUN mv /tmp/docker-php-entrypoint /usr/local/bin/docker-php-entrypoint \
     && chmod +x /usr/local/bin/docker-php-entrypoint \
     && sed -i "s/\r$//" /usr/local/bin/docker-php-entrypoint \
     && mv /tmp/nginx.conf /etc/nginx/nginx.conf \
